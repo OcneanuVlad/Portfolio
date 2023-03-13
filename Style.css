@@ -53,7 +53,6 @@ body {
   margin: 0px;
   -webkit-user-select: none;
      -moz-user-select: none;
-      -ms-user-select: none;
           user-select: none;
   font-size: 0.9vw;
   display: flex;
@@ -161,7 +160,7 @@ body #projectsContainer #denimBack {
   left: 0vw;
   position: fixed;
   z-index: 101;
-  opacity: 1.5%;
+  opacity: 1%;
   background-image: url(Elements/lines.png);
   background-position: center;
   background-size: cover;
@@ -207,25 +206,10 @@ body #projectsContainer #projectNav .leftArrow {
   margin: 0px;
   margin-right: 5vw;
   font-size: 140%;
-  -webkit-animation-name: swipeleft;
-          animation-name: swipeleft;
-  -webkit-animation-timing-function: ease-in-out;
-          animation-timing-function: ease-in-out;
-  -webkit-animation-duration: 1.5s;
-          animation-duration: 1.5s;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-}
-@-webkit-keyframes swipeleft {
-  0% {
-    margin-right: 4.3vw;
-  }
-  50% {
-    margin-right: 5vw;
-  }
-  100% {
-    margin-right: 4.3vw;
-  }
+  animation-name: swipeleft;
+  animation-timing-function: ease-in-out;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
 }
 @keyframes swipeleft {
   0% {
@@ -243,25 +227,10 @@ body #projectsContainer #projectNav .rightArrow {
   margin: 0px;
   margin-left: 5vw;
   font-size: 140%;
-  -webkit-animation-name: swiperight;
-          animation-name: swiperight;
-  -webkit-animation-timing-function: ease-in-out;
-          animation-timing-function: ease-in-out;
-  -webkit-animation-duration: 1.5s;
-          animation-duration: 1.5s;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-}
-@-webkit-keyframes swiperight {
-  0% {
-    margin-left: 4.3vw;
-  }
-  50% {
-    margin-left: 5vw;
-  }
-  100% {
-    margin-left: 4.3vw;
-  }
+  animation-name: swiperight;
+  animation-timing-function: ease-in-out;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
 }
 @keyframes swiperight {
   0% {
@@ -367,14 +336,10 @@ body #projectsContainer .project .lines .line {
 body #projectsContainer .project .arrowCont {
   position: fixed;
   top: 93vh;
-  -webkit-animation-name: scroll;
-          animation-name: scroll;
-  -webkit-animation-duration: 1.5s;
-          animation-duration: 1.5s;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-  -webkit-animation-timing-function: ease;
-          animation-timing-function: ease;
+  animation-name: scroll;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease;
 }
 body #projectsContainer .project .arrowCont .arrow {
   display: inline-block;
@@ -383,17 +348,6 @@ body #projectsContainer .project .arrowCont .arrow {
   width: 2px;
   background-color: var(--colorFront);
   transition: background-color 2s;
-}
-@-webkit-keyframes scroll {
-  0% {
-    top: 91vh;
-  }
-  50% {
-    top: 93vh;
-  }
-  100% {
-    top: 91vh;
-  }
 }
 @keyframes scroll {
   0% {
@@ -987,48 +941,10 @@ body #pageContainer #home #welcome #welcomeHr {
 body #pageContainer #home #universe {
   font-size: 500%;
   font-family: "Pacifico", sans-serif;
-  -webkit-animation-name: fontChange;
-          animation-name: fontChange;
-  -webkit-animation-duration: 1.7s;
-          animation-duration: 1.7s;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
+  animation-name: fontChange;
+  animation-duration: 1.7s;
+  animation-iteration-count: infinite;
   z-index: 3;
-}
-@-webkit-keyframes fontChange {
-  0% {
-    font-family: "ElMessiri", sans-serif;
-  }
-  10% {
-    font-family: "DancingScript", sans-serif;
-  }
-  20% {
-    font-family: "Griffy", sans-serif;
-  }
-  30% {
-    font-family: "Lobster", sans-serif;
-  }
-  40% {
-    font-family: "Calligraffitti", sans-serif;
-  }
-  50% {
-    font-family: "Playfair", sans-serif;
-  }
-  60% {
-    font-family: "PoorStory", sans-serif;
-  }
-  70% {
-    font-family: "Courgette", sans-serif;
-  }
-  80% {
-    font-family: "Raleway", sans-serif;
-  }
-  90% {
-    font-family: "Shadows", sans-serif;
-  }
-  100% {
-    font-family: "ElMessiri", sans-serif;
-  }
 }
 @keyframes fontChange {
   0% {
@@ -1198,22 +1114,10 @@ body #pageContainer #projects #workContainer #works .work {
   transform: scale(0.85);
 }
 body #pageContainer #projects #workContainer #works .work .first {
-  -webkit-animation-name: "slide";
-          animation-name: "slide";
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-  -webkit-animation-duration: 14s;
-          animation-duration: 14s;
-  -webkit-animation-timing-function: linear;
-          animation-timing-function: linear;
-}
-@-webkit-keyframes slide {
-  0% {
-    margin-left: -130vh;
-  }
-  100% {
-    margin-left: 160vh;
-  }
+  animation-name: "slide";
+  animation-iteration-count: infinite;
+  animation-duration: 14s;
+  animation-timing-function: linear;
 }
 @keyframes slide {
   0% {
@@ -1224,22 +1128,10 @@ body #pageContainer #projects #workContainer #works .work .first {
   }
 }
 body #pageContainer #projects #workContainer #works .work #first2 {
-  -webkit-animation-name: "slideReverse";
-          animation-name: "slideReverse";
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-  -webkit-animation-duration: 14s;
-          animation-duration: 14s;
-  -webkit-animation-timing-function: linear;
-          animation-timing-function: linear;
-}
-@-webkit-keyframes slideReverse {
-  0% {
-    margin-left: 130vh;
-  }
-  100% {
-    margin-left: -160vh;
-  }
+  animation-name: "slideReverse";
+  animation-iteration-count: infinite;
+  animation-duration: 14s;
+  animation-timing-function: linear;
 }
 @keyframes slideReverse {
   0% {
@@ -1446,24 +1338,12 @@ body #cursorCont #cursor {
   border-radius: 50%;
   pointer-events: none;
   transition: width 0.2s, height 0.2s, background-color 2s, border-radius 0.2s, border 2s;
-  -webkit-animation-name: "rotate";
-          animation-name: "rotate";
-  -webkit-animation-timing-function: linear;
-          animation-timing-function: linear;
-  -webkit-animation-duration: 4s;
-          animation-duration: 4s;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
+  animation-name: "rotate";
+  animation-timing-function: linear;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
   border: 1px solid var(--colorBack);
   display: block;
-}
-@-webkit-keyframes rotate {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
 }
 @keyframes rotate {
   0% {

@@ -1114,7 +1114,7 @@ body #pageContainer #projects #workContainer #works .work {
   transform: scale(0.85);
 }
 body #pageContainer #projects #workContainer #works .work .first {
-  animation-name: "slide";
+  animation-name: slide;
   animation-iteration-count: infinite;
   animation-duration: 14s;
   animation-timing-function: linear;
@@ -1128,7 +1128,7 @@ body #pageContainer #projects #workContainer #works .work .first {
   }
 }
 body #pageContainer #projects #workContainer #works .work #first2 {
-  animation-name: "slideReverse";
+  animation-name: slideReverse;
   animation-iteration-count: infinite;
   animation-duration: 14s;
   animation-timing-function: linear;

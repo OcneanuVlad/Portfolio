@@ -1217,7 +1217,7 @@ body {
                     transform: scale(0.85);
 
                     .first {
-                        animation-name: "slide";
+                        animation-name: slide;
                         animation-iteration-count: infinite;
                         animation-duration: 14s;
                         animation-timing-function: linear;
@@ -1232,7 +1232,7 @@ body {
                     }
 
                     #first2 {
-                        animation-name: "slideReverse";
+                        animation-name: slideReverse;
                         animation-iteration-count: infinite;
                         animation-duration: 14s;
                         animation-timing-function: linear;

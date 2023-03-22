@@ -954,6 +954,13 @@ body {
             display: flex;
             justify-content: center;
 
+            
+            #cvLink {
+                cursor: none;
+                width: 2vw;
+                margin-left: 2vw;
+                margin-right: 2vw;
+            }
             #gmailLink {
                 cursor: none;
                 width: 2vw;
@@ -1471,7 +1478,7 @@ body {
         border-radius: 50%;
         pointer-events: none;
         transition: width 0.2s, height 0.2s, background-color 2s, border-radius 0.2s, border 2s;
-        animation-name: 'rotate';
+        animation-name: rotate;
         animation-timing-function: linear;
         animation-duration: 4s;
         animation-iteration-count: infinite;

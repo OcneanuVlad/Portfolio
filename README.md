@@ -1,3 +1,1 @@
-This is my portofolio website.
-
-Go to www.ocneanuvlad.com to acces it.
+This is my portofolio website. (no longer hosted)
